@@ -1,4 +1,9 @@
-/ohtu-2022-viikko1.git/*.tmp
-/ohtu-2022-viikko1.git/_pycache_/
-/ohtu-2022-viikko1.git/*.pytest_cache/
-
+.vscode
+.DS_Store
+.coverage
+.pytest_cache
+htmlcov
+coverage.xml
+__pycache__
+*.py[cod]
+*$py.class
