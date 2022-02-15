@@ -1,1 +1,0 @@
-Tällä tiedostolla kokeillaan uuden tiedoston lisäämistä ja git add -p -toimintoa.
