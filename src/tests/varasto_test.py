@@ -93,4 +93,4 @@ class TestVarasto(unittest.TestCase):
     def test_tehdaan_negatiivinen_alku_saldo(container):
         container.varasto = Varasto(0, -6)
 
-        container.assertAlmostEqual(container.varasto.paljonko_mahtuu(), 0)
+        container.assertAlmostEqual(container.varasto.paljonko_mahtuu(), 10)
