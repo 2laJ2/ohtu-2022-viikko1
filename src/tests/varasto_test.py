@@ -80,17 +80,17 @@ class TestVarasto(unittest.TestCase):
 
         self.assertAlmostEqual(saatu_maara, "saldo = 0, vielä tilaa 10")
 
-    def test_tehdaan_pienempi_varasto_kuin_saldo(container):
-        container.varasto = Varasto(0, 5)
+    def test_tehdaan_pienempi_varasto_kuin_saldo(self):
+        self.varasto = Varasto(0, 5)
 
-        container.assertAlmostEqual(container.varasto.paljonko_mahtuu(), 0)
+        self.assertAlmostEqual(self.varasto.paljonko_mahtuu(), 0)
 
-    def test_tehdaan_negatiivinen_varasto(container):
-        container.varasto = Varasto(-6, 0)
+    def test_tehdaan_negatiivinen_varasto(self):
+        self.varasto = Varasto(-6, 0)
 
-        container.assertAlmostEqual(container.varasto.paljonko_mahtuu(), 6)
+        self.assertAlmostEqual(self.varasto.paljonko_mahtuu(), 6)
 
-    def test_tehdaan_negatiivinen_alku_saldo(container):
-        container.varasto = Varasto(0, -6)
+    def test_tehdaan_negatiivinen_alku_saldo(self):
+        self.varasto = Varasto(0, -6)
 
-        container.assertAlmostEqual(container.varasto.paljonko_mahtuu(), 0)
+        self.assertAlmostEqual(self.varasto.paljonko_mahtuu(), 0)
